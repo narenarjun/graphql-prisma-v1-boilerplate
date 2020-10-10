@@ -52,6 +52,17 @@ type User {
   createdAt: String!
 }
 
+type Post {
+  id: ID!
+  title: String!
+  body: String!
+  published: Boolean!
+  author: User!
+  comments: [Comment!]!
+  updatedAt: String!
+  createdAt: String!
+}
+
 enum MutationType {
   CREATED
   UPDATED
